@@ -91,3 +91,76 @@
 #         return result
 
 # print(factorial(5))
+
+# выведение слов со строки списком
+# text = "Lorem ipsum dolor "
+# alphabet = "abcdefhijklmnopqrstuvwxyz"
+# words = []
+# start = 0
+# for  indx, char in enumerate(text):
+#     if not char.lower() in alphabet:
+#         word = text[start:indx]
+#         words.append(word.strip())
+#         start = indx
+# print (words)
+
+# text = "Lorem ipsum dolor "
+# dict_counter = {}
+# for char in text:
+#     counter = dict_counter.get(char, 0)
+#     # try:
+#     #     counter = dict_counter[char] #отримуємо значення по ключу
+#     # except KeyError:
+#     #     counter = 0    
+#     counter += 1
+#     dict_counter[char] = counter #записуємо значення по ключу
+# print(dict_counter)
+# first_name = Petro  
+# last_name = Ivanovich
+# middle_name = Zaliznyak
+# def get_fullname (first_name, last_name, middle_name = ""):
+#     if middle_name == "":
+#         print(f"{first_name} {last_name}")
+#     else:
+#         print(f"{first_name} {middle_name} {last_name}")
+# get_fullname("Petro", "Zaliznyak", "Ivanovich")
+
+# def first(size, *args):
+#     value = []
+#     for arg in args:
+#         value.append(arg)
+#     print(size + len(value))
+# first(5, 'first', 'second', 'third')
+
+# def first (size, *args):
+#     print (size + len(args))
+# first(5, 'first', 'second', 'third')    
+
+
+# Перевірка на правильність введення пароля
+# password = input('Enter Password: ')
+
+# if password == 'Password':
+#     print ('Access')
+# else:
+#     print ('Accesse denied')
+# Перевірка балансу
+# balance = 0.6 + 0.7
+
+# if round(balance, 2) >= 1.3:
+#     print ('You have enough money')
+# else:
+#     print('You are poor')
+
+# Використання тернарного оператора на визначення парності або непарності числа
+# number = int(input('Enter natural number: '))
+
+# result = 'even' if number % 2 == 0 else 'odd'
+# print (f'Your number {number} is {result}')
+
+
+# Послідовність чисел Фібоначчі
+# a, b = 0, 1
+# for _ in range(10):
+#     print(a)
+#     a, b = b, a + b
